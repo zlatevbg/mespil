@@ -1,0 +1,196 @@
+// MESPIL
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-100.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-100.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-100.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-100-italic.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-100-italic.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-100-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-300.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-300.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-300.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-300-italic.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-300-italic.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-300-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-500.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-500.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-500.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-500-italic.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-500-italic.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-500-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-700.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-700.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-700.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-700-italic.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-700-italic.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-700-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-900.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-900.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-900.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    src:
+        url('/fonts/museo-sans/museo-sans-900-italic.woff2') format('woff2'),
+        url('/fonts/museo-sans/museo-sans-900-italic.woff') format('woff'),
+        url('/fonts/museo-sans/museo-sans-900-italic.ttf') format('truetype');
+}
+
+$brand-primary: #bc954d;
+$brand-secondary: #363636;
+$blue:    #007bff;
+$green:    #28a745;
+
+// BOOTSTRAP
+
+$enable-caret: false;
+$enable-rounded: false;
+$enable-responsive-font-sizes: true;
+
+$theme-colors: (
+    "primary": $brand-primary,
+    "secondary": $brand-secondary,
+    "light": #eee,
+    "blue": $blue,
+    "green": $green,
+    "pgv": #ffcf40
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 540px,
+    md: 768px,
+    lg: 960px,
+    xl: 1200px,
+    xxl: 1366px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 768px,
+    lg: 960px,
+    xl: 1200px,
+    xxl: 1366px
+);
+
+$embed-responsive-aspect-ratios: (
+    (9 16),
+);
+
+$font-family-sans-serif: "Museo Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-weight-light: 100;
+$font-weight-normal: 300;
+$lead-font-weight: 500;
+$headings-font-weight: 900;
+$line-height-sm: 1;
+$navbar-brand-padding-y: 0;
+$navbar-light-color: $brand-secondary;
+$navbar-light-hover-color: $brand-primary;
+$navbar-light-active-color: $brand-primary;
+
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
+
+// MESPIL
+
+$colors: map-merge(
+  (
+    "black": $black
+  ),
+  $colors
+);
+
+$spacers: map-merge(
+  (
+    6: ($spacer * 4)
+  ),
+  $spacers
+);
+
+@function spacer($key: 3) {
+  @return map-get($spacers, $key);
+}
+
+@function max-width($key: 'xl') {
+  @return map-get($container-max-widths, $key);
+}
+
+$grid-gutter-width: spacer(5);
+$navbar-padding-y: spacer();
+$dropdown-font-size: $font-size-sm;

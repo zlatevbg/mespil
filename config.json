@@ -1,0 +1,253 @@
+{
+    "styles": {
+        "www": {
+            "main.css": {
+                "src": "./resources/www/sass/main.scss",
+                "dst": "./public/css/www/",
+                "watch": [
+                    "./resources/www/sass/main.scss",
+                    "./resources/www/sass/_variables.scss",
+                    "./resources/www/sass/vendor/_bootstrap.scss",
+                    "./node_modules/@fortawesome/fontawesome-free/css/svg-with-js.css"
+                ]
+            },
+            "photoswipe.css": {
+                "src": "./resources/www/sass/vendor/photoswipe.scss",
+                "dst": "./public/css/www/vendor/",
+                "watch": "./resources/www/sass/vendor/photoswipe.scss"
+            },
+            "cookieconsent.css": {
+                "src": "./node_modules/cookieconsent/build/cookieconsent.min.css",
+                "dst": "./public/css/www/vendor/",
+                "watch": "./node_modules/cookieconsent/build/cookieconsent.min.css"
+            }
+        },
+        "cms": {
+            "main.css": {
+                "src": "./resources/cms/sass/main.scss",
+                "dst": "./public/css/cms/",
+                "watch": [
+                    "./resources/cms/sass/main.scss",
+                    "./resources/cms/sass/_variables.scss",
+                    "./resources/cms/sass/vendor/_bootstrap.scss",
+                    "./node_modules/@fortawesome/fontawesome-free/css/svg-with-js.css"
+                ]
+            },
+            "auth.css": {
+                "src": "./resources/cms/sass/auth.scss",
+                "dst": "./public/css/cms/",
+                "watch": [
+                    "./resources/cms/sass/auth.scss",
+                    "./resources/cms/sass/_variables.scss"
+                ]
+            },
+            "photoswipe.css": {
+                "src": "./resources/cms/sass/vendor/photoswipe.scss",
+                "dst": "./public/css/cms/vendor/",
+                "watch": "./resources/cms/sass/vendor/photoswipe.scss"
+            }
+        }
+    },
+    "scripts": {
+        "www": {
+            "main.js": {
+                "src": "./resources/www/js/main.js",
+                "dst": "./public/js/www/",
+                "watch": "./resources/www/js/main.js"
+            },
+            "ajax.js": {
+                "src": "./resources/www/js/ajax.js",
+                "dst": "./public/js/www/",
+                "watch": "./resources/www/js/ajax.js"
+            },
+            "photoswipe.js": {
+                "src": "./resources/www/js/photoswipe.js",
+                "dst": "./public/js/www/",
+                "watch": "./resources/www/js/photoswipe.js"
+            },
+            "jquery.js": {
+                "src": "./node_modules/jquery/dist/jquery.js",
+                "dst": "./public/js/www/vendor/",
+                "watch": "./node_modules/jquery/dist/jquery.js"
+            },
+            "popper.js": {
+                "src": "./node_modules/popper.js/dist/umd/popper.js",
+                "dst": "./public/js/www/vendor/",
+                "watch": "./node_modules/popper.js/dist/umd/popper.js"
+            },
+            "bootstrap.js": {
+                "src": "./node_modules/bootstrap/dist/js/bootstrap.js",
+                "dst": "./public/js/www/vendor/",
+                "watch": "./node_modules/bootstrap/dist/js/bootstrap.js"
+            },
+            "loadjs.js": {
+                "src": "./node_modules/loadjs/dist/loadjs.js",
+                "dst": "./public/js/www/vendor/",
+                "watch": "./node_modules/loadjs/dist/loadjs.js"
+            },
+            "axios.js": {
+                "src": "./node_modules/axios/dist/axios.js",
+                "dst": "./public/js/www/vendor/",
+                "watch": "./node_modules/axios/dist/axios.js"
+            },
+            "photoswipe-vendor.js": {
+                "src": [
+                    "./node_modules/photoswipe/dist/photoswipe.js",
+                    "./node_modules/photoswipe/dist/photoswipe-ui-default.js"
+                ],
+                "dst": "./public/js/www/vendor/",
+                "watch": [
+                    "./node_modules/photoswipe/dist/photoswipe.js",
+                    "./node_modules/photoswipe/dist/photoswipe-ui-default.js"
+                ]
+            },
+            "vanilla-lazyload.js": {
+                "src": "./node_modules/vanilla-lazyload/dist/lazyload.iife.min.js",
+                "dst": "./public/js/www/vendor/",
+                "watch": "./node_modules/vanilla-lazyload/dist/lazyload.iife.min.js"
+            },
+            "cookieconsent.js": {
+                "src": "./node_modules/cookieconsent/build/cookieconsent.min.js",
+                "dst": "./public/js/www/vendor/",
+                "watch": "./node_modules/cookieconsent/build/cookieconsent.min.js"
+            },
+            "isotope.js": {
+                "src": "./node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+                "dst": "./public/js/www/vendor/",
+                "watch": "./node_modules/isotope-layout/dist/isotope.pkgd.min.js"
+            },
+            "imagesloaded.js": {
+                "src": "./node_modules/imagesloaded/imagesloaded.js",
+                "dst": "./public/js/www/vendor/",
+                "watch": "./node_modules/imagesloaded/imagesloaded.js"
+            }
+        },
+        "cms": {
+            "main.js": {
+                "src": "./resources/cms/js/main.js",
+                "dst": "./public/js/cms/",
+                "watch": "./resources/cms/js/main.js"
+            },
+            "ajax.js": {
+                "src": "./resources/cms/js/ajax.js",
+                "dst": "./public/js/cms/",
+                "watch": "./resources/cms/js/ajax.js"
+            },
+            "jquery.js": {
+                "src": "./node_modules/jquery/dist/jquery.js",
+                "dst": "./public/js/cms/vendor/",
+                "watch": "./node_modules/jquery/dist/jquery.js"
+            },
+            "popper.js": {
+                "src": "./node_modules/popper.js/dist/umd/popper.js",
+                "dst": "./public/js/cms/vendor/",
+                "watch": "./node_modules/popper.js/dist/umd/popper.js"
+            },
+            "bootstrap.js": {
+                "src": "./node_modules/bootstrap/dist/js/bootstrap.js",
+                "dst": "./public/js/cms/vendor/",
+                "watch": "./node_modules/bootstrap/dist/js/bootstrap.js"
+            },
+            "loadjs.js": {
+                "src": "./node_modules/loadjs/dist/loadjs.js",
+                "dst": "./public/js/cms/vendor/",
+                "watch": "./node_modules/loadjs/dist/loadjs.js"
+            },
+            "axios.js": {
+                "src": "./node_modules/axios/dist/axios.js",
+                "dst": "./public/js/cms/vendor/",
+                "watch": "./node_modules/axios/dist/axios.js"
+            },
+            "photoswipe.js": {
+                "src": [
+                    "./node_modules/photoswipe/dist/photoswipe.js",
+                    "./node_modules/photoswipe/dist/photoswipe-ui-default.js"
+                ],
+                "dst": "./public/js/cms/vendor/",
+                "watch": [
+                    "./node_modules/photoswipe/dist/photoswipe.js",
+                    "./node_modules/photoswipe/dist/photoswipe-ui-default.js"
+                ]
+            }
+        }
+    },
+    "copy": {
+        "www": {
+            ".htaccess": {
+                "src": "./node_modules/apache-server-configs/dist/.htaccess",
+                "dst": "./public/",
+                "footer": "<IfModule mod_rewrite.c>\n    # Rewrite example.com → www.example.com\n    RewriteEngine On\n    RewriteCond %{HTTP_HOST} ^mespil.local [NC]\n    RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [QSA,L,R=301]\n\n    # Handle Authorization Header\n    RewriteCond %{HTTP:Authorization} .\n    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]\n\n    # Redirect Trailing Slashes If Not A Folder...\n    RewriteCond %{REQUEST_FILENAME} !-d\n    RewriteCond %{REQUEST_URI} (.+)/$\n    RewriteRule ^ %1 [L,R=301]\n\n    # Handle Front Controller...\n    RewriteCond %{REQUEST_FILENAME} !-d\n    RewriteCond %{REQUEST_FILENAME} !-f\n    RewriteRule ^ index.php [L]\n</IfModule>",
+                "replace": {
+                    "# (<IfModule mod_rewrite\\.c>\n)#(    RewriteEngine On\n)#(    RewriteCond %\\{HTTPS\\} !=on\n)#(    # \\(1\\)\n)#    # (RewriteCond %\\{REQUEST_URI\\} !\\^\/\\\\\\.well-known\/acme-challenge\/\n)#    # (RewriteCond %\\{REQUEST_URI\\} !\\^\/\\\\\\.well-known\/cpanel-dcv\/\\[\\\\w-\\]\\+\\$\n)#    # (RewriteCond %\\{REQUEST_URI\\} !\\^\/\\\\\\.well-known\/pki-validation\/\\[A-F0-9\\]\\{32\\}\\\\\\.txt\\(\\?:\\\\ Comodo\\\\ DCV\\)\\?\\$\n)#(    RewriteRule \\^ https:\/\/%\\{HTTP_HOST\\}%\\{REQUEST_URI\\} \\[R=301,L\\]\n)#( <\/IfModule>)": "$1$2$3$4    $5    $6    $7$8$9",
+                    "(    RewriteCond %\\{HTTP_HOST\\} \\^www\\\\.\\(\\.\\+\\)\\$ \\[NC\\]\n)(    RewriteRule \\^ %\\{ENV:PROTO\\}:\/\/%1%\\{REQUEST_URI\\} \\[R=301,L\\]\n\n)": "# $1# $2",
+                    "# (<IfModule mod_rewrite\\.c>\n)# (    RewriteEngine On\n)# (    RewriteCond %\\{REQUEST_FILENAME\\} !-f\n)# (    RewriteRule \\^\\(\\.\\+\\)\\\\.\\(\\\\w\\+\\)\\\\.\\(bmp\\|css\\|cur\\|gif\\|ico\\|jpe\\?g\\|m\\?js\\|a\\?png\\|svgz\\?\\|webp\\|webmanifest)(\\)\\$ \\$1\\.\\$3 \\[L\\]\n)# (<\/IfModule>)": "$1$2$3$4|mp4|webm|avi|json$5$6"
+                }
+            },
+            "_bootstrap.scss": {
+                "src": "./node_modules/bootstrap/scss/bootstrap.scss",
+                "dst": "./resources/www/sass/vendor/",
+                "replace": {
+                    "^@import \"(mixins|utilities)\";$": "@import \"_$1\";",
+                    "^(@import \"(functions|variables|_mixins|code|button-group|custom-forms|nav|breadcrumb|badge|jumbotron|progress|media|list-group|toasts|modal|tooltip|popover|spinners)\";)$": "// $1",
+                    "^(// )?@import \"": "$1@import \"~bootstrap/scss/"
+                }
+            },
+            "photoswipe.scss": {
+                "src": [
+                    "./node_modules/photoswipe/src/css/_main-settings.scss",
+                    "./node_modules/photoswipe/src/css/main.scss",
+                    "./node_modules/photoswipe/src/css/default-skin/default-skin.scss"
+                ],
+                "dst": "./resources/www/sass/vendor/",
+                "replace": {
+                    "^(@import \"(../)?main-settings\";)$": "// $1",
+                    "^\\$pswp__assets-path: ''": "$pswp__assets-path: 'photoswipe/'"
+                }
+            },
+            "photoswipe-skin": {
+                "src": "./node_modules/photoswipe/dist/default-skin/*.+(png|svg|gif)",
+                "dst": "./public/css/www/vendor/photoswipe"
+            }
+        },
+        "cms": {
+            "_bootstrap.scss": {
+                "src": "./node_modules/bootstrap/scss/bootstrap.scss",
+                "dst": "./resources/cms/sass/vendor/",
+                "replace": {
+                    "^@import \"(mixins|utilities)\";$": "@import \"_$1\";",
+                    "^(@import \"(functions|variables|_mixins|code|button-group|input-group|custom-forms|nav|breadcrumb|badge|jumbotron|progress|media|list-group|toasts|tooltip|popover|spinners)\";)$": "// $1",
+                    "^(// )?@import \"": "$1@import \"~bootstrap/scss/"
+                }
+            },
+            "photoswipe.scss": {
+                "src": [
+                    "./node_modules/photoswipe/src/css/_main-settings.scss",
+                    "./node_modules/photoswipe/src/css/main.scss",
+                    "./node_modules/photoswipe/src/css/default-skin/default-skin.scss"
+                ],
+                "dst": "./resources/cms/sass/vendor/",
+                "replace": {
+                    "^(@import \"(../)?main-settings\";)$": "// $1",
+                    "^\\$pswp__assets-path: ''": "$pswp__assets-path: 'photoswipe/'"
+                }
+            },
+            "photoswipe-skin": {
+                "src": "./node_modules/photoswipe/dist/default-skin/*.+(png|svg|gif)",
+                "dst": "./public/css/cms/vendor/photoswipe"
+            }
+        }
+    },
+    "images": {
+        "root": {
+            "src": "./public/img/**/*.{gif,jpg,jpeg,png,svg}",
+            "dst": "./public/img-server/",
+            "watch": "./public/img/**/*"
+        }
+    },
+    "knownOptions": {
+        "default": {
+            "production": false,
+            "skipcache": false
+        }
+    }
+}
